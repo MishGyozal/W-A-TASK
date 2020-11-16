@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss.css">
+</head>
+<body>
+    <div id="container">
+        
+
+        <div class="header">
+            <div class="menu-top">
+                <div class="logoInMenu">
+                    <div>
+                        <a href="/">
+                            <img src="./icons/Union.svg" alt="">
+                            <p>CompanyLOGO</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="userParams">
+                    <div class="first">
+                        <div>
+                            <img src="./icons/avatar.png" alt="avatar">
+                        </div>
+                        <div class="userBlock">
+                            <div class="userProps">
+                                <div class="userName">Carolina Mayer</div>
+                                <ul class="userOptions"></ul>
+                            </div>
+                            <div class="userStatus">Company Super Admin</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="topRightMenu">
+                <div class="topMenu">
+                    <div class="home">
+                        <div class="borderDiv"></div>
+                        <div>
+                            <h3>Home</h3>
+                        </div>
+                    </div>
+                    <div class="paramsMenu">
+                        <div class="question"></div>
+                        <div class="request"></div>
+                        <div class="settings"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div id="menu">
+            <div class="leftMenu">
+                <div id="panel">
+                    <ul>
+                        <li>
+                            <div class="home">
+                                <a href="/">
+                                    <span class="icon"></span>
+                                    <span>Home</span> 
+                                </a>
+                            </div>
+                           
+                        </li>
+                        <li class="activeButton">
+                            <div class="document">
+                                <a href="/documents.html">
+                                    <span class="active"></span>
+                                    <span>Documents</span> 
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contacts">
+                                <a href="/">
+                                    <span class="icon"></span>
+                                    <span>Contacts</span> 
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recordings">
+                                <a href="/">
+                                    <span class="icon"></span>
+                                    <span>Recordings</span> 
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="userManegment">
+                                <a href="/">
+                                    <span class="icon"></span>
+                                    <span>User Managment</span> 
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="interpreterManegment">
+                                <a href="/">
+                                    <span class="icon"></span>
+                                    <span>Interpreter Managment</span> 
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="locations">
+                                <a href="/">
+                                    <span class="icon"></span>
+                                    <span>Locations</span> 
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="logOut">
+                    
+                    <div class="logOut">
+                        <div class="leftPart">
+                            <span class="icon"></span>
+                            <span>Log Out</span>
+                        </div>
+                       <div>
+                         <span class="leftArrow"></span>
+                        </div>
+                    </div>
+         
+                </div>
+            </div>
+            <div class="myArea">
+                <div class="areaParams">
+                    <div class="areaTopPart">
+                        <div class="uploadDocument">
+                            <div class="leftPartFindMenu">
+                                 <div class="categoryFilter">
+                                    <div class="categoryBtn">
+                                        <span>Category</span>
+                                        <span class="iconDown"></span>
+                                        <span class="iconUp noneDisplay"></span>
+                                    </div>
+                                    <ul class="noneDisplay categoryUl">
+                                         <li>Show All</li>
+                                         <li>Financial</li>
+                                         <li>Technology</li>
+                                         <li>Healthchare</li>
+                                     </ul>
+                                 </div>
+                                 <div class="categoryFilter">
+                                         <div class="filterBtn">
+                                             <span>Filter</span>
+                                             <span class="iconDownFilter"></span>
+                                             <span class="iconUpFilter noneDisplay"></span>
+                                         </div>
+                                         <ul class="noneDisplay filterUl">
+                                              <li>Show All</li>
+                                              <li>Tipe</li>
+                                              <li>Date</li>
+                                              <li>Status</li>
+                                          </ul>
+                                 </div>
+                                 <div class="search">
+                                     <input class="searchInput"type="text" name="" placeholder="Search...">
+                                     <div class="searchItem">
+                                         <span class="searchIco"></span>
+                                     </div>
+                                 </div>
+                            </div>
+                            <div class="uploadDocButton">
+                             <div class="documentUpload">
+                                 <label class="doc">
+                                     <span>Upload Document</span>
+                                     <input type="file" name="upload" class="uploadBtn" index="0" accept=".pdf, .doc, .docx, .xlsx">
+                                 </label>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="documents">
+                    <div class="docList">
+                        <div class="listLeftPart">
+                            <div class="listDoc">
+                                <span class="documnetIco"></span>
+                                <span>Document List</span>
+                            </div>
+                            <div class="itemCount">
+                                <p>12 items</p>
+                            </div>
+                        </div>
+                        <div class="listRightPart">
+                            <div class="quantity">
+                                <p>Quantity:</p>
+                                <div class="quantityBtn">
+                                    <span>55</span>
+                                    <span class="downArrow"></span>
+                                </div>
+                            </div>
+                            <div class="bntNum">
+                                <div>1</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <p>...</p>
+                                <div class="ml">4</div>
+                            </div>
+                            <div class="goTo">
+                                <p>Go To:</p>
+                                <input class="searchInput" type="text" name="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="docTabel">
+                        <div class="docName">Document Name</div>
+                        <div class="docType">Tipe</div>
+                        <div class="docDate">Date</div>
+                        <div class="docStatus">Status</div>
+                        <div class="docAction">Actions</div>
+                    </div>
+                <div class="tabelContainer">
+                    <div class="documentTbl">
+                        <div class="docName">
+                            <span>Interview</span>
+                        </div>
+                        <div class="docType">
+                            <span class="pdf icon"></span>
+                            <span>PDF</span>
+                        </div>
+                        <div class="docDate">
+                            <span>09.12.2020</span>
+                        </div>
+                        <div class="docStatus">
+                            <div class="active">
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="docAction">
+                            <span class="action"></span>
+                        </div>
+                    </div>
+
+                    <div class="documentTbl">
+                        <div class="docName">
+                            <span>Interview</span>
+                        </div>
+                        <div class="docType">
+                            <span class="doc icon"></span>
+                            <span>Word</span>
+                        </div>
+                        <div class="docDate">
+                            <span>09.12.2020</span>
+                        </div>
+                        <div class="docStatus">
+                            <div class="active">
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="docAction">
+                            <span class="action"></span>
+                        </div>
+                    </div>
+
+                    <div class="documentTbl">
+                        <div class="docName">
+                            <span>Interview</span>
+                        </div>
+                        <div class="docType">
+                            <span class="pdf icon"></span>
+                            <span>PDF</span>
+                        </div>
+                        <div class="docDate">
+                            <span>09.12.2020</span>
+                        </div>
+                        <div class="docStatus">
+                            <div class="active">
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="docAction">
+                            <span class="action"></span>
+                        </div>
+                    </div>
+
+                    <div class="documentTbl">
+                        <div class="docName">
+                            <span>Interview</span>
+                        </div>
+                        <div class="docType">
+                            <span class="doc icon"></span>
+                            <span>Word</span>
+                        </div>
+                        <div class="docDate">
+                            <span>09.12.2020</span>
+                        </div>
+                        <div class="docStatus">
+                            <div class="active">
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="docAction">
+                            <span class="action"></span>
+                        </div>
+                    </div>
+
+                    <div class="documentTbl">
+                        <div class="docName">
+                            <span>Interview</span>
+                        </div>
+                        <div class="docType">
+                            <span class="doc icon"></span>
+                            <span>Word</span>
+                        </div>
+                        <div class="docDate">
+                            <span>09.12.2020</span>
+                        </div>
+                        <div class="docStatus">
+                            <div class="active">
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="docAction">
+                            <span class="action"></span>
+                        </div>
+                    </div>
+
+                    <div class="documentTbl">
+                        <div class="docName">
+                            <span>Interview</span>
+                        </div>
+                        <div class="docType">
+                            <span class="pdf icon"></span>
+                            <span>PDF</span>
+                        </div>
+                        <div class="docDate">
+                            <span>09.12.2020</span>
+                        </div>
+                        <div class="docStatus">
+                            <div class="active deActive">
+                                <span>Deactive</span>
+                            </div>
+                        </div>
+                        <div class="docAction">
+                            <span class="action"></span>
+                        </div>
+                    </div>
+
+                    <div class="documentTbl">
+                        <div class="docName">
+                            <span>Interview</span>
+                        </div>
+                        <div class="docType">
+                            <span class="doc icon"></span>
+                            <span>Word</span>
+                        </div>
+                        <div class="docDate">
+                            <span>09.12.2020</span>
+                        </div>
+                        <div class="docStatus">
+                            <div class="active">
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="docAction">
+                            <span class="action"></span>
+                        </div>
+                    </div>
+
+                    <div class="documentTbl">
+                        <div class="docName">
+                            <span>Interview</span>
+                        </div>
+                        <div class="docType">
+                            <span class="pdf icon"></span>
+                            <span>PDF</span>
+                        </div>
+                        <div class="docDate">
+                            <span>09.12.2020</span>
+                        </div>
+                        <div class="docStatus">
+                            <div class="active deActive">
+                                <span>Deactive</span>
+                            </div>
+                        </div>
+                        <div class="docAction">
+                            <span class="action"></span>
+                        </div>
+                    </div>
+
+                    <div class="documentTbl">
+                        <div class="docName">
+                            <span>Interview</span>
+                        </div>
+                        <div class="docType">
+                            <span class="xlsx icon"></span>
+                            <span>XLSX</span>
+                        </div>
+                        <div class="docDate">
+                            <span>09.12.2020</span>
+                        </div>
+                        <div class="docStatus">
+                            <div class="active">
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="docAction">
+                            <span class="action"></span>
+                        </div>
+                    </div>
+
+                    <div class="documentTbl">
+                        <div class="docName">
+                            <span>Interview</span>
+                        </div>
+                        <div class="docType">
+                            <span class="xlsx icon"></span>
+                            <span>XLSX</span>
+                        </div>
+                        <div class="docDate">
+                            <span>09.12.2020</span>
+                        </div>
+                        <div class="docStatus">
+                            <div class="active">
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="docAction">
+                            <span class="action"></span>
+                        </div>
+                    </div>
+
+                    <div class="documentTbl">
+                        <div class="docName">
+                            <span>Interview</span>
+                        </div>
+                        <div class="docType">
+                            <span class="xlsx icon"></span>
+                            <span>XLSX</span>
+                        </div>
+                        <div class="docDate">
+                            <span>09.12.2020</span>
+                        </div>
+                        <div class="docStatus">
+                            <div class="active">
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="docAction">
+                            <span class="action"></span>
+                        </div>
+                    </div>
+
+                    <div class="documentTbl">
+                        <div class="docName">
+                            <span>Interview</span>
+                        </div>
+                        <div class="docType">
+                            <span class="xlsx icon"></span>
+                            <span>XLSX</span>
+                        </div>
+                        <div class="docDate">
+                            <span>09.12.2020</span>
+                        </div>
+                        <div class="docStatus">
+                            <div class="active">
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="docAction">
+                            <span class="action"></span>
+                        </div>
+                    </div>
+                </div>
+                   </div>
+            
+                </div>
+               
+            </div>
+        </div>
+
+
+    </div>
+    <script src="documents.js"></script>
+</body>
+</html>

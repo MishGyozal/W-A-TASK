@@ -1,0 +1,776 @@
+$textWhite: #ffffff;
+$iconSize: 32px;
+
+@mixin icon {
+    width: 50px;
+    height: $iconSize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+} 
+
+
+#container{
+    width: 100vw;
+    height: 100vh;
+
+  
+
+
+
+    #menu {
+        height:calc(100% - 300px);
+        background: #E5E5E5;
+        display: flex;
+
+        .myArea{
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            .areaParams{
+                background: white;
+                width: calc(100% - 28px);
+                height: calc(100vh - 90px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                top: -210px;
+                position: absolute;
+
+                .areaTopPart {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                .uploadDocument{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: calc(100% - 44px);
+                    height: 95px;
+                    background: #EFF4FF;
+                    border-radius: 5px;
+                    margin-left: 28px;
+
+                    .leftPartFindMenu{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        margin-left: 20px;
+                        width: 80%;
+
+                        .search:hover{
+                            background: $textWhite;
+                            border-radius: 15px;
+
+                            .searchItem{
+                                background: $textWhite;
+                                box-shadow: none;
+                            }
+
+                            .searchIco{
+                                width: 16px;
+                                content: url(./icons/searchBlue.png);
+                            }
+
+                            .searchInput {
+                                width: 186px;
+                                padding: 0 6px;
+                            }
+                        }
+                        
+                        .searchInput {
+                            border:none;
+                            background: none;
+                            outline:none;
+                            float:left;
+                            padding: 0;
+                            font-size: 16px;
+                            transition: 0.4s;
+                            line-height: 40px;
+                            width: 0px;
+                            font-family: 'Work Sans';
+                            font-style: normal;
+                            font-weight: normal;
+                        
+                        }
+                        .searchItem{
+                            width: 52px;
+                            height: 40px;
+                            background: #37A0EA;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+                            border-radius: 15px;
+                            cursor: pointer;
+
+                            .searchIco{
+                                width: 16px;
+                                content: url(./icons/search.png);
+                            }
+
+                        }
+
+           
+
+                        .categoryFilter{
+                            width: 250px;
+                            box-shadow: 0px 0px 6px rgba(39, 174, 222, 0.25);
+                            color:#6D6D6D;
+                            font-size: 16px;
+                            margin-right: 20px;
+                            .blueColor{
+                                color: #37A0EA;
+                                border-radius: 15px 15px 0px 0px !important;
+                            }
+
+                            ul{
+                                width: 250px;
+                                position: absolute;
+
+                                li{
+                                    height: 40px;
+                                    align-items: center;
+                                    display: flex;
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .categoryBtn, .filterBtn{
+                                height: 40px;
+                                align-items: center;
+                                border-radius: 15px;
+                                background:$textWhite;
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 0px 10px;
+                                cursor: pointer;
+
+                                .iconDown,.iconDownFilter{
+                                    content: url(./icons/arrowDown.png);
+                                }
+
+                                .iconUp,.iconUpFilter{
+                                    content: url(./icons/iconUp.png);
+                                }
+                            }
+                        }
+
+                        .noneDisplay{
+                            display: none;
+                        }
+
+                        ul{
+                            background:$textWhite;
+                            list-style: none;
+                            border-radius: 0px 0px 15px 15px;
+                        }
+                    }
+
+                    .uploadDocButton{
+                        width: 20%;
+                    }
+                }
+
+                .adminWelcome{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 370px;
+                    border-bottom: 4px solid #1976D2;
+
+                    p {
+                        font-family: 'Work Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 50px;
+                        color: #575A63;
+                        margin: 10px;
+                    }
+    
+                    .welcome{
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+
+        .leftMenu{
+            width: 20%;
+            height: calc(100% - 56px);
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 28px;
+        
+        #panel {
+            width: 100%;
+            height: 100%;
+
+            ul{
+                width: 100%;
+                height: 100%;
+                list-style: none;
+
+
+                li{
+                    max-height: 48px;
+                    height: 12%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    div{
+                        width: 90%;
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+
+                
+                        
+
+
+                        a {
+                            text-decoration: none;
+                            color: #ffffff;
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            margin-left: 10px;
+                            height: 100%;
+                        }
+                    }
+
+                   
+                }
+
+            }
+        }
+    } 
+    }
+}
+
+
+
+#panel  div:hover{
+    border-left: 2px solid white;
+
+} 
+
+.activeButton {
+    background: linear-gradient(91.39deg, #4568DC -2.02%, #00B4DB 118.83%);
+
+    div{
+        border-left: 2px solid white;
+    }
+}
+
+.home .active  {
+    content: url(./icons/homewhite.png);
+}
+
+.home .icon  {
+    content: url(./icons/homebrown.png);
+}
+.document .icon  {
+    content: url(./icons/documents.png);
+}
+
+.document .active  {
+    content: url(./icons/docwhite.png);
+}
+
+.contacts .icon {
+    content: url(./icons/contacts.png);
+}
+
+.recordings .icon {
+    content: url(./icons/recordings.png);
+}
+
+.userManegment .icon {
+    content: url(./icons/usermanagment.png);
+}
+
+.interpreterManegment .icon {
+    content: url(./icons/interpretermanagment.png);
+}
+
+.locations .icon {
+    content: url(./icons/locations.png);
+}
+
+.header{
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    background: linear-gradient(91.39deg, #4568DC -2.02%, #00B4DB 118.83%);
+}
+
+.menu-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+}
+
+.logoInMenu{
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 90px;
+
+    div  a{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        color: $textWhite;
+        text-decoration: none;
+    }
+
+    p {
+        margin-left: 5px;
+    }
+
+}
+
+
+
+.topRightMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+
+    .topMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+    }
+}
+
+
+.home{
+    display: flex;
+    align-items: center;
+    color: $textWhite;
+
+    h3 {
+        margin-left: 25px;
+    }
+
+}
+
+.borderDiv{
+    width: 5px;
+    height: 48px;
+    background: #56E86D;
+}
+
+
+.paramsMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+
+}
+
+.question{
+    background: url(./icons/question.svg);
+    border-right: 1px solid #56E86D;
+}
+
+.request{
+    background: url(./icons/request.svg);
+    border-right: 1px solid #56E86D;
+}
+
+.settings{ 
+    background: url(./icons/settings.svg);
+}
+
+.question , .request, .settings{
+    @include icon();
+}
+
+.userParams {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .first{
+        display: flex;
+        align-items: center;
+        .userBlock{
+            height: 100%;
+            font-family: 'Work Sans';
+            font-style: normal;
+            padding-left: 10px;
+            .userProps{
+                height: 50%;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgba(55, 160, 234, 0.4);
+                padding-top: 5px;
+                align-items: center;
+    
+                .userName{
+                    font-size: 18px;
+                    color: #ffffff;
+                }
+            
+                .userOptions{
+                    background: url(./icons/vector.png);
+                    height: 15px;
+                    width: 15px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+        
+        
+        
+            
+            .userStatus{
+                height: 50%;
+                padding-top: 5px;
+                color:#E5E5E5;
+                font-size: 16px;
+            }
+        
+        }
+    }
+    
+}
+
+#logOut {
+    display: flex;
+    justify-content: center;
+
+    .logOut{
+        width: 100%;
+        max-width: 276px;
+        height: 56px;
+        align-items: center;
+        display: flex;
+        background: #37A0EA;
+        color: $textWhite;
+        border-radius: 15px;
+        justify-content: space-between;
+        cursor: pointer;
+    
+        .leftPart{    
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+        }
+        
+        .icon{
+            content: url(./icons/logout.png);
+            margin-right: 10px;
+            border-right: 2px solid;
+            padding-right: 10px;
+        }
+    }
+}
+
+
+
+.leftArrow {
+    content: url(./icons/leftarrow.png);
+}
+
+.documentUpload{
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+
+    .doc{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 168px;
+        background: #37A0EA;
+        border-radius: 15px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .uploadBtn{
+        display: none;
+    }
+}
+
+
+.documents {
+    width: calc(100% - 44px);
+    height: calc(100% - 135px);
+    margin-top: 20px;
+    margin-left: 15px;
+    color:$textWhite;
+
+    .docList{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #37A0EA;
+        border-radius: 5px 5px 0px 0px;
+
+        .listLeftPart{
+            display: flex;
+            margin-left: 20px;
+
+            .listDoc{
+                width: 145px;
+                border-right: 1px solid $textWhite;
+            }
+
+            .itemCount{
+                margin-left: 10px;
+            }
+
+            .documnetIco{
+                margin-right: 15px;
+                content: url(./icons/docwhite.png);
+            }
+
+            div{
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .listRightPart{
+            display: flex;
+            margin-right: 20px;
+            align-items: center;
+            .quantity{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .quantityBtn{
+                    background: white;
+                    color: black;
+                    display: flex;
+                    width: 40px;
+                    align-items: center;
+                    height: 30px;
+                    justify-content: space-between;
+                    margin-left: 6px;
+                    margin-right: 32px;
+
+                    .downArrow{
+                        content: url(./icons/arrowDown.png);
+                    }
+                }
+            }
+
+            .bntNum{
+                display: flex;
+
+                div{
+                    width: 20px;
+                    height: 20px;
+                    color:  #37A0EA;
+                    background: $textWhite;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 5px;
+                }
+
+                .ml{
+                    margin-left: 5px;
+                    margin-right: 25px;
+                }
+    
+            }
+
+            .goTo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                input{
+                    width: 40px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    .docTabel{
+        color: #575A63;
+        display: flex;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+
+        .docName,.docType,.docDate{
+            width: calc(25% - 20px); 
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 20px;
+            border-right:  1px solid #EAEDF6;
+            height: 33px; 
+            align-items: center;
+        }
+
+        .docType,.docDate{
+            width: calc(22% - 36px);
+            margin-left: 36px;
+        }
+
+        .docStatus{
+            width: calc(17% - 36px);
+            display: flex;
+            justify-content: center;
+            margin-left: 36px;
+            border-right:  1px solid #EAEDF6;
+            height: 33px; 
+            align-items: center;
+        }
+
+        .docAction{
+            width: calc(14% - 36px);
+            display: flex;
+            justify-content: center;
+            margin-left: 36px;
+            border-right:  1px solid #EAEDF6;
+            height: 33px; 
+            align-items: center;
+        }
+    }
+
+    .tabelContainer{
+        width: 100%;
+        height: calc(97% - 100px);
+        background: $textWhite;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .documentTbl{
+        width: 100%;
+        height: 8%;
+        max-height: 50px;
+        min-height: 27px;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #575A63;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #EAEDF6;
+
+        .docName,.docType,.docDate{
+            width: calc(25% - 20px); 
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 20px;
+            height: 33px; 
+            align-items: center;
+        }
+
+        .docType,.docDate{
+            width: calc(22% - 36px);
+            margin-left: 36px;
+        }
+
+        .docStatus{
+            width: calc(17% - 36px);
+            display: flex;
+            justify-content: center;
+            margin-left: 36px;
+            height: 33px; 
+            align-items: center;
+        }
+
+        .docAction{
+            width: calc(14% - 36px);
+            display: flex;
+            justify-content: center;
+            margin-left: 36px;
+            height: 33px; 
+            align-items: center;
+        }
+
+        .docType{
+
+            .icon{
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+
+            .pdf{
+                content: url(./icons/pdf.png);
+            }
+
+            .doc{
+                content: url(./icons/doc.png);
+            }
+
+            .xlsx{
+                content: url(./icons/xlsx.png);
+            }
+        }
+        .docStatus{
+
+            .active {
+                width: 90px;
+                height: 100%;
+                max-height: 24px;
+                background: #27AE60;
+                border-radius: 20px;
+                color: $textWhite;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: normal;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            .deActive {
+                background: #BDBDBD;
+            }
+        }
+        .action{
+            content: url(./icons/action.png);
+        }
+    }
+}

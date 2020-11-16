@@ -1,0 +1,996 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#container #menu {
+  height: calc(100% - 300px);
+  background: #E5E5E5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container #menu .myArea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#container #menu .myArea .areaParams {
+  background: white;
+  width: calc(100% - 28px);
+  height: calc(100vh - 90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -210px;
+  position: absolute;
+}
+
+#container #menu .myArea .areaParams .areaTopPart {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#container #menu .myArea .areaParams .uploadDocument {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% - 44px);
+  height: 95px;
+  background: #EFF4FF;
+  border-radius: 5px;
+  margin-left: 28px;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-left: 20px;
+  width: 80%;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .search:hover {
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .search:hover .searchItem {
+  background: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .search:hover .searchIco {
+  width: 16px;
+  content: url(./icons/searchBlue.png);
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .search:hover .searchInput {
+  width: 186px;
+  padding: 0 6px;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  font-size: 16px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: normal;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .searchItem {
+  width: 52px;
+  height: 40px;
+  background: #37A0EA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .searchItem .searchIco {
+  width: 16px;
+  content: url(./icons/search.png);
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter {
+  width: 250px;
+  -webkit-box-shadow: 0px 0px 6px rgba(39, 174, 222, 0.25);
+          box-shadow: 0px 0px 6px rgba(39, 174, 222, 0.25);
+  color: #6D6D6D;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter .blueColor {
+  color: #37A0EA;
+  border-radius: 15px 15px 0px 0px !important;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter ul {
+  width: 250px;
+  position: absolute;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter ul li {
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter .categoryBtn, #container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter .filterBtn {
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter .categoryBtn .iconDown, #container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter .categoryBtn .iconDownFilter, #container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter .filterBtn .iconDown, #container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter .filterBtn .iconDownFilter {
+  content: url(./icons/arrowDown.png);
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter .categoryBtn .iconUp, #container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter .categoryBtn .iconUpFilter, #container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter .filterBtn .iconUp, #container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .categoryFilter .filterBtn .iconUpFilter {
+  content: url(./icons/iconUp.png);
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu .noneDisplay {
+  display: none;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .leftPartFindMenu ul {
+  background: #ffffff;
+  list-style: none;
+  border-radius: 0px 0px 15px 15px;
+}
+
+#container #menu .myArea .areaParams .uploadDocument .uploadDocButton {
+  width: 20%;
+}
+
+#container #menu .myArea .areaParams .adminWelcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 370px;
+  border-bottom: 4px solid #1976D2;
+}
+
+#container #menu .myArea .areaParams .adminWelcome p {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  color: #575A63;
+  margin: 10px;
+}
+
+#container #menu .myArea .areaParams .adminWelcome .welcome {
+  font-weight: normal;
+}
+
+#container #menu .leftMenu {
+  width: 20%;
+  height: calc(100% - 56px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 28px;
+}
+
+#container #menu .leftMenu #panel {
+  width: 100%;
+  height: 100%;
+}
+
+#container #menu .leftMenu #panel ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+#container #menu .leftMenu #panel ul li {
+  max-height: 48px;
+  height: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container #menu .leftMenu #panel ul li div {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#container #menu .leftMenu #panel ul li div a {
+  text-decoration: none;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-left: 10px;
+  height: 100%;
+}
+
+#panel div:hover {
+  border-left: 2px solid white;
+}
+
+.activeButton {
+  background: linear-gradient(91.39deg, #4568DC -2.02%, #00B4DB 118.83%);
+}
+
+.activeButton div {
+  border-left: 2px solid white;
+}
+
+.home .active {
+  content: url(./icons/homewhite.png);
+}
+
+.home .icon {
+  content: url(./icons/homebrown.png);
+}
+
+.document .icon {
+  content: url(./icons/documents.png);
+}
+
+.document .active {
+  content: url(./icons/docwhite.png);
+}
+
+.contacts .icon {
+  content: url(./icons/contacts.png);
+}
+
+.recordings .icon {
+  content: url(./icons/recordings.png);
+}
+
+.userManegment .icon {
+  content: url(./icons/usermanagment.png);
+}
+
+.interpreterManegment .icon {
+  content: url(./icons/interpretermanagment.png);
+}
+
+.locations .icon {
+  content: url(./icons/locations.png);
+}
+
+.header {
+  width: 100vw;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: linear-gradient(91.39deg, #4568DC -2.02%, #00B4DB 118.83%);
+}
+
+.menu-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+}
+
+.logoInMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  height: 90px;
+}
+
+.logoInMenu div a {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logoInMenu p {
+  margin-left: 5px;
+}
+
+.topRightMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 90px;
+}
+
+.topRightMenu .topMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 100%;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.home h3 {
+  margin-left: 25px;
+}
+
+.borderDiv {
+  width: 5px;
+  height: 48px;
+  background: #56E86D;
+}
+
+.paramsMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 210px;
+}
+
+.question {
+  background: url(./icons/question.svg);
+  border-right: 1px solid #56E86D;
+}
+
+.request {
+  background: url(./icons/request.svg);
+  border-right: 1px solid #56E86D;
+}
+
+.settings {
+  background: url(./icons/settings.svg);
+}
+
+.question, .request, .settings {
+  width: 50px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: center;
+}
+
+.userParams {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.userParams .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.userParams .first .userBlock {
+  height: 100%;
+  font-family: 'Work Sans';
+  font-style: normal;
+  padding-left: 10px;
+}
+
+.userParams .first .userBlock .userProps {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(55, 160, 234, 0.4);
+  padding-top: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.userParams .first .userBlock .userProps .userName {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.userParams .first .userBlock .userProps .userOptions {
+  background: url(./icons/vector.png);
+  height: 15px;
+  width: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.userParams .first .userBlock .userStatus {
+  height: 50%;
+  padding-top: 5px;
+  color: #E5E5E5;
+  font-size: 16px;
+}
+
+#logOut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#logOut .logOut {
+  width: 100%;
+  max-width: 276px;
+  height: 56px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #37A0EA;
+  color: #ffffff;
+  border-radius: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+#logOut .logOut .leftPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+}
+
+#logOut .logOut .icon {
+  content: url(./icons/logout.png);
+  margin-right: 10px;
+  border-right: 2px solid;
+  padding-right: 10px;
+}
+
+.leftArrow {
+  content: url(./icons/leftarrow.png);
+}
+
+.documentUpload {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.documentUpload .doc {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 168px;
+  background: #37A0EA;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.documentUpload .uploadBtn {
+  display: none;
+}
+
+.documents {
+  width: calc(100% - 44px);
+  height: calc(100% - 135px);
+  margin-top: 20px;
+  margin-left: 15px;
+  color: #ffffff;
+}
+
+.documents .docList {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #37A0EA;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.documents .docList .listLeftPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+}
+
+.documents .docList .listLeftPart .listDoc {
+  width: 145px;
+  border-right: 1px solid #ffffff;
+}
+
+.documents .docList .listLeftPart .itemCount {
+  margin-left: 10px;
+}
+
+.documents .docList .listLeftPart .documnetIco {
+  margin-right: 15px;
+  content: url(./icons/docwhite.png);
+}
+
+.documents .docList .listLeftPart div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents .docList .listRightPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents .docList .listRightPart .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents .docList .listRightPart .quantity .quantityBtn {
+  background: white;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 6px;
+  margin-right: 32px;
+}
+
+.documents .docList .listRightPart .quantity .quantityBtn .downArrow {
+  content: url(./icons/arrowDown.png);
+}
+
+.documents .docList .listRightPart .bntNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.documents .docList .listRightPart .bntNum div {
+  width: 20px;
+  height: 20px;
+  color: #37A0EA;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 5px;
+}
+
+.documents .docList .listRightPart .bntNum .ml {
+  margin-left: 5px;
+  margin-right: 25px;
+}
+
+.documents .docList .listRightPart .goTo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents .docList .listRightPart .goTo input {
+  width: 40px;
+  height: 30px;
+}
+
+.documents .docTabel {
+  color: #575A63;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.documents .docTabel .docName, .documents .docTabel .docType, .documents .docTabel .docDate {
+  width: calc(25% - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 20px;
+  border-right: 1px solid #EAEDF6;
+  height: 33px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents .docTabel .docType, .documents .docTabel .docDate {
+  width: calc(22% - 36px);
+  margin-left: 36px;
+}
+
+.documents .docTabel .docStatus {
+  width: calc(17% - 36px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 36px;
+  border-right: 1px solid #EAEDF6;
+  height: 33px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents .docTabel .docAction {
+  width: calc(14% - 36px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 36px;
+  border-right: 1px solid #EAEDF6;
+  height: 33px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents .tabelContainer {
+  width: 100%;
+  height: calc(97% - 100px);
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.documents .documentTbl {
+  width: 100%;
+  height: 8%;
+  max-height: 50px;
+  min-height: 27px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #575A63;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #EAEDF6;
+}
+
+.documents .documentTbl .docName, .documents .documentTbl .docType, .documents .documentTbl .docDate {
+  width: calc(25% - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 20px;
+  height: 33px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents .documentTbl .docType, .documents .documentTbl .docDate {
+  width: calc(22% - 36px);
+  margin-left: 36px;
+}
+
+.documents .documentTbl .docStatus {
+  width: calc(17% - 36px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 36px;
+  height: 33px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents .documentTbl .docAction {
+  width: calc(14% - 36px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 36px;
+  height: 33px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents .documentTbl .docType .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.documents .documentTbl .docType .pdf {
+  content: url(./icons/pdf.png);
+}
+
+.documents .documentTbl .docType .doc {
+  content: url(./icons/doc.png);
+}
+
+.documents .documentTbl .docType .xlsx {
+  content: url(./icons/xlsx.png);
+}
+
+.documents .documentTbl .docStatus .active {
+  width: 90px;
+  height: 100%;
+  max-height: 24px;
+  background: #27AE60;
+  border-radius: 20px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.documents .documentTbl .docStatus .deActive {
+  background: #BDBDBD;
+}
+
+.documents .documentTbl .action {
+  content: url(./icons/action.png);
+}
+/*# sourceMappingURL=scss.css.map */
